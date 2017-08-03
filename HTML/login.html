@@ -9,8 +9,10 @@
 </head>
 <body>
   <header>
-    <img src="img/badge.png" alt="thin blue line badge">
-    <a href="index.html"><h1>MDT CAD System</h1></a>
+    <a href="index.html" class="main">
+      <img src="img/badge.png" class="badge" alt="thin blue line badge">
+      <h1>MDT CAD System</h1>
+    </a>
   </header>
   <nav>
     <ul>
@@ -27,9 +29,15 @@
   <main>
     <section>
       <form action="index.html" method="post">
-        <input type="text" name="User Name" value="username">
-        <input type="password" name="Password" value="password">
-        <input type="button" name="Login" value="submit">
+        <p>
+          Username:
+          <input type="text" name="username" value="User name">
+        </p>
+        <p>
+          Password:
+          <input type="password" name="password" value="Password">
+        </p>
+        <input type="button" name="submit" value="Login">
       </form>
     </section>
   </main>
