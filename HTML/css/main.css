@@ -20,6 +20,46 @@ h1 {
   text-shadow: 2px 2px 2px slategray;
 }
 
+nav {
+  font-size: 1.3rem;
+  color: #0947c1;
+  background-color: #b1b1b1;
+  width: 100%;
+  display: inline-block;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #b1b1b1;
+}
+
+li {
+  float: left;
+  border-right: 1px solid white;
+  border-radius: 0;
+  margin: 0;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a:hover:not(.active) {
+  background-color: lightgreen;
+}
+
+li.active {
+  background-color: lightgreen;
+}
+
+#login {
+  float: right;
+}
+
 div {
   text-align: center;
   background-color: lightgray;
@@ -35,10 +75,9 @@ div {
 
 img {
   display: inline-block;
-  border-radius: 50%;
-  border: 3px solid;
   padding: 0;
-  border-color: #818181;
+  float: right;
+  width: 85px;
 }
 
 section {
@@ -62,10 +101,6 @@ article::first-letter {
   font-weight: bold;
 }
 
-li:hover {
-  background-color: lightgray;
-}
-
 aside {
   width: 100%;
   height: 25px;
@@ -73,16 +108,23 @@ aside {
   background-color: lightslategray;
 }
 
-ul {
+ul.list {
   list-style: none;
   padding: 0 auto;
   box-sizing: border-box;
 }
 
-li {
+li.listitem {
+  float: none;
+  margin: 5px;
+  border-radius: 5px;
   border: solid;
   border-width: 1px;
   border-color: gray;
+}
+
+li.listitem:hover {
+  background-color: lightgray;
 }
 
 footer {
