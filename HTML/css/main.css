@@ -12,21 +12,52 @@ header {
   background-image: linear-gradient(to bottom, black 40%, blue 40%, blue 60%, black 60%);
 }
 
+a.main {
+  text-decoration: none;
+}
+
 h1 {
   font-size: 4rem;
-  color: #d50000;
+  color: #ee0000;
   font-family: 'Righteous', cursive;
   font-variant: small-caps;
   text-shadow: 2px 2px 2px slategray;
 }
 
 nav {
-  font-size: 1.3rem;
-  color: #0947c1;
-  background-color: #b1b1b1;
+  font-size: 1.4rem;
+  color: blue;
+  background-color: black;
   width: 100%;
   display: inline-block;
-  padding: 0;
+}
+
+a.menu {
+  text-decoration: none;
+  border-radius: 0;
+  display: inline-block;
+  margin: 0;
+}
+
+a.menu:link {
+  color: white;
+}
+
+a.menu:visited {
+  color: white;
+}
+
+a.menu:hover {
+  color: blue;
+}
+
+a.menu:active {
+  color: white;
+}
+
+a#current:hover {
+  color: white;
+  background-color: blue;
 }
 
 ul {
@@ -34,14 +65,15 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #b1b1b1;
 }
 
 li {
   float: left;
   border-right: 1px solid white;
   border-radius: 0;
+  padding: 0;
   margin: 0;
+  display: inline-block;
 }
 
 li:last-child {
@@ -49,11 +81,11 @@ li:last-child {
 }
 
 li a:hover:not(.active) {
-  background-color: lightgreen;
+  background-color: white;
 }
 
 li.active {
-  background-color: lightgreen;
+  background-color: blue;
 }
 
 #login {
@@ -84,6 +116,11 @@ section {
   width: 100%;
   background-color: #59c234;
   display: inline-block;
+}
+
+form {
+  margin: 1.2rem auto;
+  text-align: center;
 }
 
 article {
@@ -117,10 +154,12 @@ ul.list {
 li.listitem {
   float: none;
   margin: 5px;
+  padding: 3px;
   border-radius: 5px;
   border: solid;
   border-width: 1px;
   border-color: gray;
+  display: block;
 }
 
 li.listitem:hover {
@@ -132,8 +171,4 @@ footer {
   text-align: center;
   font-size: 0.8rem;
   background-color: lightslategray;
-}
-
-a {
-  text-decoration: none;
 }

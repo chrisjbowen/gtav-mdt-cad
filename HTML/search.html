@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Login</title>
+  <title>Search</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
@@ -15,10 +15,10 @@
   <nav>
     <ul>
       <li><a href="index.html" class="menu">Home</a></li>
-      <li><a href="search.html" class="menu">Search</a></li>
+      <li class="active"><a href="search.html" class="menu" id="current">Search</a></li>
       <li><a href="peds.html" class="menu">PEDs</a></li>
       <li><a href="vehicles.html" class="menu">Vehicles</a></li>
-      <li class="active" id="login"><a href="login.html" class="menu" id="current">Login</a></li>
+      <li id="login"><a href="login.html" class="menu">Login</a></li>
     </ul>
   </nav>
   <div>
@@ -26,11 +26,17 @@
   </div>
   <main>
     <section>
-      <form action="index.html" method="post">
-        <input type="text" name="User Name" value="username">
-        <input type="password" name="Password" value="password">
-        <input type="button" name="Login" value="submit">
-      </form>
+        <form action="search.html" method="post">
+          <p>
+            Vehicle Seach by License Plate:
+            <input type="text" name="Vehicle Search" value="plate">
+          </p>
+          <p>
+            PED Search by Name:
+            <input type="text" name="PED Search" value="name">
+          </p>
+          <input type="button" name="Search" value="submit">
+        </form>
     </section>
   </main>
   <footer>
