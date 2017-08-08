@@ -14,27 +14,6 @@ header {
   align-items: center;
 }
 
-a {
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-  width: 150px;
-}
-
-h1 {
-  font-size: 4rem;
-  color: #ee0000;
-  width: 100%;
-  font-family: 'Righteous', cursive;
-  font-variant: small-caps;
-  text-shadow: 2px 2px 2px slategray;
-}
-
-img.badge {
-  padding: 0;
-  height: 80px;
-}
-
 nav {
   font-size: 1.4rem;
   color: blue;
@@ -73,19 +52,49 @@ a#current:hover {
   background-color: blue;
 }
 
+img.badge {
+  padding: 0;
+  height: 80px;
+  display: none
+}
+
+h1 {
+  font-size: 2rem;
+  color: #ee0000;
+  width: 100%;
+  font-family: 'Righteous', cursive;
+  font-variant: small-caps;
+  text-shadow: 2px 2px 2px slategray;
+}
+
+nav {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+}
+
 ul {
   list-style-type: none;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 
-li {
-  border-right: 1px solid white;
+.menuitem {
   border-radius: 0;
   margin: 2px 5px;
   padding: 0px;
+  width: 100%;
   border: 1px solid red;
+}
+
+li.login {
+  margin-left: 5px;
 }
 
 li a:hover:not(.active) {
@@ -97,8 +106,8 @@ li.active {
   border: 1px solid blue;
 }
 
-li.login {
-  margin-left: auto;
+a {
+  width: 100%
 }
 
 div {
@@ -123,7 +132,7 @@ section {
   width: 100%;
   background-color: #59c234;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-content: space-around;
 }
@@ -131,13 +140,11 @@ section {
 .results {
   background-color: #70bbff;
   width: 100%;
-  margin: 3px auto;
   display: block;
 }
 
 li.results {
   max-width: 400px;
-  padding: 2px 8px;
 }
 
 li.results:hover {
@@ -156,8 +163,8 @@ li.results:hover {
 article {
   margin: 5px;
   padding: 8px;
-  width: 400px;
-  height: 75px;
+  width: 100%;
+  min-height: 75px;
   border: 1px solid red;
   background-color: lightblue;
   line-height: 1;
@@ -178,7 +185,6 @@ aside {
 ul.list {
   list-style: none;
   padding: 0 auto;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
 }

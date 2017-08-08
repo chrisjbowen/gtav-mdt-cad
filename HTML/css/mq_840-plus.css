@@ -1,0 +1,11 @@
+ul {
+  justify-content: flex-start;
+}
+
+li.login {
+  margin-left: auto;
+}
+
+.menuitem {
+  width: 150px
+}

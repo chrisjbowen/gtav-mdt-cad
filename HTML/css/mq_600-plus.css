@@ -1,0 +1,15 @@
+h1 {
+  font-size: 4rem;
+}
+
+img.badge {
+  display: inline-block;
+}
+
+.menuitem {
+  width: 30%
+}
+
+article {
+  width: 45%;
+}
