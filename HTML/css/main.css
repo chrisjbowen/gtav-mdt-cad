@@ -9,18 +9,30 @@
 header {
   width: 100%;
   text-align: center;
-  background-image: linear-gradient(to bottom, black 40%, blue 40%, blue 60%, black 60%);
+  background-image: linear-gradient(to bottom,
+    black 40%,
+    blue 40%,
+    blue 60%,
+    black 60%);
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 nav {
-  font-size: 1.4rem;
+  font-size: 1rem;
   color: blue;
   margin: 0;
   background-color: black;
   width: 100%;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  width: 100%
 }
 
 a.menu {
@@ -55,6 +67,9 @@ a#current:hover {
 img.badge {
   padding: 0;
   height: 80px;
+  position: absolute;
+  right: 10px;
+  top: 5.5px;
   display: none
 }
 
@@ -65,17 +80,27 @@ h1 {
   font-family: 'Righteous', cursive;
   font-variant: small-caps;
   text-shadow: 2px 2px 2px slategray;
+  -webkit-text-stroke: 0.1px whitesmoke;
 }
 
-nav {
-  font-size: 1rem;
+div {
+  text-align: center;
+  background-color: lightgray;
 }
 
-a {
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-  width: 150px;
+div.construction {
+  background-image: repeating-linear-gradient(-45deg,
+    red,
+    red 25px,
+    yellow 25px,
+    yellow 50px);
+}
+
+#construction {
+  color: black;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+  text-decoration: underline;
 }
 
 ul {
@@ -106,23 +131,6 @@ li.active {
   border: 1px solid blue;
 }
 
-a {
-  width: 100%
-}
-
-div {
-  text-align: center;
-  background-color: lightgray;
-}
-
-#construction {
-  font-size: 1.25rem;
-  color: #979a00;
-  font-family: monospace;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
 form {
   margin: 0.3rem auto;
   text-align: center;
@@ -134,7 +142,13 @@ section {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  align-content: space-around;
+}
+
+h2 {
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: center;
+  color: blue;
 }
 
 .results {

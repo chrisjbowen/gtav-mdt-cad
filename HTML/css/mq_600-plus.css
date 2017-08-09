@@ -10,6 +10,20 @@ img.badge {
   width: 30%
 }
 
+h2 {
+  font-size: 1.5rem;
+}
+
 article {
   width: 45%;
+}
+
+nav {
+  font-size: 1.4rem;
+}
+
+#construction {
+  font-size: 1.4rem;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
 }
