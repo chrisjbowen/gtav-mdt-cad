@@ -75,7 +75,7 @@ img.badge {
 
 h1 {
   font-size: 2rem;
-  color: #ee0000;
+  color: #E81A0C;
   width: 100%;
   font-family: 'Righteous', cursive;
   font-variant: small-caps;
@@ -90,10 +90,10 @@ div {
 
 div.construction {
   background-image: repeating-linear-gradient(-45deg,
-    red,
-    red 25px,
-    yellow 25px,
-    yellow 50px);
+    #E81A0C,
+    #E81A0C 25px,
+    #FFD300 25px,
+    #FFD300 50px);
 }
 
 #construction {
@@ -115,7 +115,7 @@ ul {
   margin: 2px 5px;
   padding: 0px;
   width: 100%;
-  border: 1px solid red;
+  border: 1px solid #E81A0C;
 }
 
 li.login {
@@ -138,7 +138,7 @@ form {
 
 section {
   width: 100%;
-  background-color: #59c234;
+  background-color: #00FF63;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -179,7 +179,7 @@ article {
   padding: 8px;
   width: 100%;
   min-height: 75px;
-  border: 1px solid red;
+  border: 1px solid #E81A0C;
   background-color: lightblue;
   line-height: 1;
 }
