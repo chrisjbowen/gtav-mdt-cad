@@ -156,8 +156,7 @@ h2 {
   width: 100%;
   display: block;
 }
-
-li.results {
+.results {
   max-width: 400px;
 }
 
@@ -167,7 +166,7 @@ li.results:hover {
 
 .wanted {
   background-color: #ff8200;
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: bold;
   width: 95%;
   color: #b10b00;

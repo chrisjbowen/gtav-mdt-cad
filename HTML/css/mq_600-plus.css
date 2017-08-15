@@ -27,3 +27,7 @@ nav {
   font-family: 'Roboto Mono', monospace;
   font-weight: 700;
 }
+
+.wanted {
+  font-size: 2rem;
+}
