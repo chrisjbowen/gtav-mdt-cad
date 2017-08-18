@@ -1,6 +1,7 @@
 * {
   margin: 5px auto;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 3px;
   border-radius: 5px;
   max-width: 1000px;
@@ -9,13 +10,23 @@
 header {
   width: 100%;
   text-align: center;
+  background-image: -webkit-gradient(linear,
+    left top, left bottom,
+    color-stop(40%, black),
+    color-stop(40%, blue),
+    color-stop(60%, blue),
+    color-stop(60%, black));
   background-image: linear-gradient(to bottom,
     black 40%,
     blue 40%,
     blue 60%,
     black 60%);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 
@@ -105,9 +116,15 @@ div.construction {
 
 ul {
   list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .menuitem {
@@ -139,9 +156,15 @@ form {
 section {
   width: 100%;
   background-color: #00FF63;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 h2 {
@@ -200,8 +223,13 @@ aside {
 ul.list {
   list-style: none;
   padding: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 li.listitem {
@@ -212,8 +240,13 @@ li.listitem {
   border: solid;
   border-width: 1px;
   border-color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 li.listitem:hover {
