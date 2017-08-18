@@ -156,7 +156,9 @@ h2 {
   width: 100%;
   display: block;
 }
-.results {
+
+ul.results {
+  border: 2px solid black;
   max-width: 400px;
 }
 
